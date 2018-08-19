@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../img/log.png);
+    display: flex;
+    min-height: 100vh;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #6699;
+}
+/*ESTILOS DEL FORMULARIO*/
+
+form {
+    margin: auto;
+    width: 50%;
+    background-color:rgba(0,0,0,0.4);
+    padding: 30px;
+    border: 1px solid rgba(255,255,255, 0.2);
+         word-break: break-all;
+    
+}
+
+label, h2, p{
+	color:white;
+}
+
+
+.titulo{
+    position:relative;
+    margin-top: 50px;
+	text-shadow:5px 5px 5px #000000;
+	display:inline-block;
+    font-size: 40px;
+}
+
+.space{
+    position: relative;
+    width:100%
+}
+
+textarea{
+	resize:vertical;
+	max-height:110px;
+	min-height:30px;
+	margin-bottom:20px;
+	width:100%;
+	padding:10px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+     background: #151515;
+    color: white;
+    
+}
+
+#nombre, #apellido {
+    width: 45%;
+   float: left;
+    color: white;
+
+}
+#nombre {
+    margin-right: 10%;
+}
+.fpago{
+        width: 45%;
+   float: left;
+    color: white;
+    margin-right: 10%;
+}
+
+input, select {
+        background: #151515;
+    padding:5px;
+    color: white;
+}
+
+.mpago {
+            width: 45%;
+   float: right;
+    color: white;
+    position:relative;
+}
+.ref {
+    width: 45%;
+    float: left;
+    color: white;
+    position:relative;
+       margin-right:10%; 
+}
+
+.monto {
+    width: 45%;
+    float: left;
+    color: white;
+    position:relative;
+
+}
+
+.recep {
+    width: 45%;
+    float: left;
+    color: white;
+    position:relative;
+       margin-right:10%; 
+}
+
+.emi {
+    width: 45%;
+    float: left;
+    color: white;
+    position:relative;
+
+}
+
+.nombre {
+        width: 45%;
+   float: left;
+    color: white;
+    margin-right: 10%; 
+}
+.ape {
+    width: 45%;
+    float: left;
+    color: white;
+    position:relative;
+}
+
+.articulo {
+        width: 45%;
+    float: left;
+    color: white;
+    position:relative;
+    
+}
+
+.llegada {
+        width: 45%;
+    float: left;
+    color: white;
+    position:relative;
+    margin-right: 10%; 
+}
+
+.tele {
+    width: 45%;
+    float: left;
+    color: white;
+    position:relative;
+    margin-right: 55%;
+
+}
+
+.mensaje{
+}
+
+input[type="cc-number"] {
+    width: 13%;
+    margin-left: 1%;
+}
+
+.back {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+}
+
+input[type="submit"] {
+background: white;
+    color: black;
+    width: 100%;
+    padding: 2% 0;
+    cursor: pointer;
+    margin-top: 2%;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/loading.gif') 50% 50% no-repeat rgba(0,0,0,0.9);
+    opacity: .8;
+}
+
+@media screen and (max-width:646px){
+form {
+    margin: auto;
+    width:100%;
+    background-color:rgba(0,0,0,0.4);
+    padding: 30px;
+    border: 1px solid rgba(255,255,255, 0.2);
+         word-break: break-all;
+    
+}
+}
+
+@media screen and (max-width:497px){
+label {
+font-size: 15px;
+    
+}
+}
+

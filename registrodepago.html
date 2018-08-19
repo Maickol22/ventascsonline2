@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="img/fvicon_v.png" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="loading.js"></script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <title>Registro de pago - VENTAS CS ONLINE</title>
+</head>
+<BODY oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+	<!-- Comienzo de Formulario -->
+
+			<form action="pago.php" method="POST"><a href="ventas.html" class="back">Regresar</a><br>
+
+<div class="nombre"><label for="nombre">Nombre</label><input type="given-name" name="name" id="name" class="space" maxlength="10" required></div>
+<div class="ape"><label for="Apellido">Apellido</label><input type="family-name" name="apellido" id="lastname" class="space" maxlength="10" required></div>
+<label for="email">Dirección de E-Mail</label><input type="email" name="email" id="02" class="space" placeholder="onlineventascs@email.com" required>
+<label for="facebook">Link de Facebook</label><input type="url" name="facebook" id="fb" class="space" required>
+<div class="fpago"><label for="Fpago">Fecha de Pago</label><input type="month" name="pago" id="pago" class="space" maxlength="10" required></div>
+<div class="mpago"><label for="Mpago">Metodo de Pago</label>
+					<select name="Mpago" id="Mpago" class="space" required>
+						<option value="none">Selecionar</option>
+						<option value="Transferencia">Transferencia</option>
+						<option value="otro-banco">Transferencia Otro Banco</option>
+						<option value="Deposito">Deposito</option>
+					</select></div>
+
+<div class="ref"><label for="Nro-Ref">Numero de Referencia</label><input type="number" name="ref" id="ref" class="space" maxlength="15" required ></div>
+<div class="monto"><label for="monto">Monto Depositado</label><input type="text" name="monto" id="monto" class="space" maxlength="18"  placeholder="0.000,00 Bs.S" required></div>
+<div class="recep"><label for="banco">Banco Emisor</label>
+					<select name="bancoE" id="bancoE" class="space" required>
+						<option value="none">Solo Transferencia</option>
+						<option value="provincial">Banco Provincial</option>
+						<option value="banesco">Banco Banesco</option>
+						<option value="bnc">Banco Nacional de Credito</option>
+						<option value="mercantil">Banco Mercantil</option>
+						<option value="bicentanerio">Banco Bicentanerio</option>
+						<option value="venezuela">Banco Venezuela</option>
+						<option value="bod">Banco B.O.D</option>
+						<option value="exterior">Paypal</option>
+						<option value="otro">Otro Banco</option>
+					</select></div>
+<div class="emi"><label for="banco">Banco Receptor:</label>
+						<select name="bancoR" id="bancoR" class="space" required>
+							<option value="none">¿A que Banco Transferiste?</option>
+							<option Value="Banesco">Banco Banesco</option>
+							<option Value="Bancaribe">Banco Bancaribe </option>
+							<option value="paypal">paypal</option>
+						</select></div>
+<div class="llegada"><label for="entrega">Fecha de Llegada del Pago</label><input type="month" name="llegada" id="entrega" class="space" maxlength="10" required></div>
+<div class="articulo"><label for="banco">Articulo de compra:</label>
+
+						<select name="articulo" id="Articulo" class="space" required>
+							<option value="none">Articulo</option>
+							<optgroup label="Skins">
+							<option Value="SKINS BLACK">SKINS BLACK</option>
+							<option Value="SKINS GREEN">SKINS GREEN</option>
+							</optgroup>
+						</select></div>
+<div class="tele"><label for="telefono">Numero de Teléfono</label><input type="tel" name="telefono" id="telefono" class="space"	maxlength="15" required></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="mensaje"><label for="msj">Escribe un mensaje aqui</label><textarea class="space" type="text" placeholder="Escribe tu Mensaje / Nota aca para soporte de Pagos!" name="mensaje" id="msj">
+    </textarea></div>
+
+<div class="g-recaptcha" data-sitekey="6LdijGoUAAAAAMV4mtZqzHTfmewlVHV1OBCIL7vJ" align="center"></div>
+
+<br>
+					<input type="submit" value="ENVIAR" id="boton"><br>
+				
+</form>
+				<!-- Final del Formulario -->
+</html>
